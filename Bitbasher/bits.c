@@ -187,7 +187,7 @@ NOTES:
  *   Rating: 3
  */
 int dl10(int highbit, int lowbit) {
-  return 2;
+       
 }
 /* 
  *
@@ -205,7 +205,10 @@ int dl10(int highbit, int lowbit) {
  *   Rating: 1
  */
 int dl11(int x, int y) {
-  return 2;
+  int a = ~x;
+  int b = ~y;
+  int result = a & b;
+  return result;
 }
 /* 
  * int test_dl12(int x, int y)
