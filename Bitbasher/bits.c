@@ -222,7 +222,11 @@ int dl11(int x, int y) {
  *   Rating: 1
  */
 int dl12(int x, int y) {
-  return 2;
+  int a = ~x;
+  int b = ~y;
+  int and = a & b;
+  int result = ~and;
+  return result;
 }
 /*
  *
