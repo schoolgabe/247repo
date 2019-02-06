@@ -187,7 +187,7 @@ NOTES:
  *   Rating: 3
  */
 int dl10(int highbit, int lowbit) {
-       
+       return 2;
 }
 /* 
  *
