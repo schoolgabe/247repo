@@ -382,7 +382,7 @@ int dl16(int x, int y, int z) {
  *   Rating: 2
  */
 int dl17(int x) {
-  return 2;
+  return -1;
 }
 /* 
  *
