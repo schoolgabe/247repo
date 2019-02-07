@@ -242,7 +242,7 @@ int dl12(int x, int y) {
  *   Rating: 4
  */
 int dl13(int x) {
-  return 2;
+  return 4;
 }
 /* 
  *
@@ -262,7 +262,14 @@ int dl13(int x) {
  *   Rating: 1
  */
 int dl14(int x, int y) {
-  return 2;
+  int a = ~x;
+  int b = ~y;
+  int firstAnd = a & b;
+  int notFirstAnd = ~firstAnd;
+  int andParam = x & y;
+  int notParam = ~andParam;
+  int result = notParam & notFirstAnd;
+  return result;
 }
 /* 
  *
